@@ -31,15 +31,17 @@ CARDS = [  # x, y, width, family, role, title, meta
     (678, 430, 232, "openai", "REVIEW-ENG", "Sol", "GPT-6.1 Sol · Codex thread"),
     (980, 222, 260, "claude", "UPSTREAM WATCHER", "Claude Code", "Claude Opus 5.5 · pin checks"),
 ]
-CARD_H = 84
+CARD_H = 98
 
 
 def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def text(x, y, s, c, size=13, weight=400, anchor="start", family=SANS, halo=None, spacing=None):
+def text(x, y, s, c, size=13, weight=400, anchor="start", family=SANS, halo=None, spacing=None, rotate=None):
     extra = f' letter-spacing="{spacing}"' if spacing else ""
+    if rotate:
+        extra += f' transform="rotate({rotate[0]} {rotate[1]} {rotate[2]})"'
     if halo:
         extra += f' stroke="{halo}" stroke-width="5" stroke-linejoin="round" paint-order="stroke"'
     return (f'<text x="{x}" y="{y}" fill="{c}" font-family="{family}" font-size="{size}" '
@@ -62,38 +64,39 @@ def draw(t: dict) -> str:
            f'<rect width="{W}" height="{H}" fill="{t["bg"]}"/>']
 
     # You, and the approval bracket over the three repos
-    out.append(f'<rect x="470" y="20" width="340" height="62" rx="31" fill="{t["card"]}" '
+    out.append(f'<rect x="430" y="16" width="420" height="70" rx="35" fill="{t["card"]}" '
                f'stroke="{t["you"]}" stroke-width="1.6"/>')
-    out.append(text(640, 46, "You", t["text"], 17, 700, "middle"))
-    out.append(text(640, 67, "approve spend · releases · version pins", t["muted"], 12.5, 400, "middle"))
+    out.append(text(640, 45, "You", t["text"], 20, 700, "middle"))
+    out.append(text(640, 70, "approve spend · releases · version pins", t["muted"], 15, 400, "middle"))
     dash = f'stroke="{t["you"]}" stroke-width="1.4" stroke-dasharray="4 4" fill="none"'
-    out.append(f'<path d="M640,82 V112 M200,112 H1110 M200,112 V138 M670,112 V138 M1110,112 V138" {dash}/>')
-    out.append(text(652, 104, "needs-user decisions come up; approvals go down", t["muted"], 11.5))
+    out.append(f'<path d="M640,86 V112 M200,112 H1110 M200,112 V138 M670,112 V138 M1110,112 V138" {dash}/>')
+    out.append(text(652, 104, "needs-user decisions come up; approvals go down", t["muted"], 13.5))
 
     # Repos the sessions sit on
     for x, w, title, sub in PANELS:
         out.append(f'<rect x="{x}" y="140" width="{w}" height="420" rx="14" fill="{t["panel"]}" '
                    f'stroke="{t["panel_line"]}"/>')
-        out.append(text(x + 20, 172, title, t["text"], 15, 700))
-        out.append(text(x + 20, 193, sub, t["muted"], 11.5, 400, family=MONO))
-    out.append(text(1110, 352, "watches upstream and flags", t["muted"], 12, 400, "middle"))
-    out.append(text(1110, 370, "changes before any pin bump", t["muted"], 12, 400, "middle"))
+        out.append(text(x + 20, 174, title, t["text"], 18, 700))
+        out.append(text(x + 20, 198, sub, t["muted"], 13.5, 400, family=MONO))
+    out.append(text(1110, 368, "watches upstream and flags", t["muted"], 14.5, 400, "middle"))
+    out.append(text(1110, 390, "changes before any pin bump", t["muted"], 14.5, 400, "middle"))
 
     # Flows (drawn before the cards so arrowheads stop at card edges)
     a, p = t["arrow"], t["panel"]
-    out.append(arrow(200, 308, 200, 428, a))
-    out.append(text(212, 372, "results ↔ direction", t["muted"], 12, 400, halo=p))
-    out.append(arrow(362, 264, 528, 264, a))
-    out.append(text(445, 254, "results ↔ direction", t["muted"], 12, 400, "middle", halo=p))
-    out.append(arrow(362, 452, 556, 309, a))
-    out.append(text(470, 404, "requests ↔ releases", t["muted"], 12, 400, "middle", halo=p))
-    out.append(arrow(640, 308, 562, 428, a))
-    out.append(arrow(700, 308, 778, 428, a))
-    out.append(text(670, 360, "pre-release", t["muted"], 12, 400, "middle", halo=p))
-    out.append(text(670, 376, "review", t["muted"], 12, 400, "middle", halo=p))
-    out.append(arrow(812, 264, 978, 264, a))
-    out.append(text(895, 254, "upstream changes", t["muted"], 12, 400, "middle", halo=p))
-    out.append(text(895, 284, "pin checks", t["muted"], 12, 400, "middle", halo=p))
+    out.append(arrow(200, 322, 200, 428, a))
+    out.append(text(212, 381, "results ↔ direction", t["muted"], 14.5, 400, halo=p))
+    out.append(arrow(362, 271, 528, 271, a))
+    out.append(text(445, 259, "results ↔ direction", t["muted"], 14.5, 400, "middle", halo=p))
+    out.append(arrow(362, 470, 556, 323, a))
+    out.append(text(453.6, 389.3, "requests ↔ releases", t["muted"], 14.5, 400, "middle", halo=p,
+                    rotate=(-37.2, 453.6, 389.3)))
+    out.append(arrow(640, 322, 566, 428, a))
+    out.append(arrow(700, 322, 774, 428, a))
+    out.append(text(670, 371, "pre-release", t["muted"], 14.5, 400, "middle", halo=p))
+    out.append(text(670, 390, "review", t["muted"], 14.5, 400, "middle", halo=p))
+    out.append(arrow(812, 271, 978, 271, a))
+    out.append(text(895, 259, "upstream changes", t["muted"], 14.5, 400, "middle", halo=p))
+    out.append(text(895, 295, "pin checks", t["muted"], 14.5, 400, "middle", halo=p))
 
     # Sessions
     for x, y, w, fam, role, title, meta in CARDS:
@@ -101,28 +104,28 @@ def draw(t: dict) -> str:
         out.append(f'<rect x="{x}" y="{y}" width="{w}" height="{CARD_H}" rx="10" fill="{t["card"]}" '
                    f'stroke="{t["card_line"]}"/>')
         out.append(f'<rect x="{x}" y="{y + 12}" width="4" height="{CARD_H - 24}" rx="2" fill="{c}"/>')
-        out.append(text(x + 18, y + 25, role, c, 11, 700, spacing="0.6"))
-        out.append(text(x + 18, y + 49, title, t["text"], 17, 700))
-        out.append(text(x + 18, y + 69, meta, t["muted"], 12.5))
+        out.append(text(x + 18, y + 27, role, c, 12.5, 700, spacing="0.5"))
+        out.append(text(x + 18, y + 55, title, t["text"], 20, 700))
+        out.append(text(x + 18, y + 80, meta, t["muted"], 14.5))
 
     # xmsg underneath everything
     out.append(f'<path d="M200,560 V592 M670,560 V592 M1110,560 V592" stroke="{t["arrow"]}" '
                f'stroke-width="1.4" stroke-dasharray="2 4"/>')
     out.append(f'<rect x="20" y="592" width="1240" height="104" rx="14" fill="{t["panel"]}" '
                f'stroke="{t["panel_line"]}"/>')
-    out.append(text(44, 636, "xmsg", t["text"], 24, 700, family=MONO))
-    out.append(text(44, 660, "~/.xmsg", t["muted"], 12, 400, family=MONO))
-    out.append(text(170, 630, "Every arrow is an xmsg message: one address book, mailboxes, threads, read receipts, "
-                    "a request ledger, the sender's model.", t["text"], 13.5))
-    chips = [("claude", "Claude Code: SendMessage + watch --next", 292),
-             ("openai", "Codex: codex queue", 150),
-             ("gemini", "agy: mailbox watch or one headless turn per message", 368)]
+    out.append(text(44, 638, "xmsg", t["text"], 28, 700, family=MONO))
+    out.append(text(44, 664, "~/.xmsg", t["muted"], 14, 400, family=MONO))
+    out.append(text(170, 628, "Every arrow is an xmsg message: one address book, mailboxes, threads, read receipts, "
+                    "a request ledger.", t["text"], 15.5))
+    chips = [("claude", "Claude Code: SendMessage + watch --next", 340),
+             ("openai", "Codex: codex queue", 180),
+             ("gemini", "agy: mailbox watch or one headless turn", 340)]
     cx = 170
     for fam, label, w in chips:
-        out.append(f'<rect x="{cx}" y="646" width="{w}" height="28" rx="14" fill="{t["card"]}" '
+        out.append(f'<rect x="{cx}" y="644" width="{w}" height="32" rx="16" fill="{t["card"]}" '
                    f'stroke="{t["card_line"]}"/>')
-        out.append(f'<circle cx="{cx + 15}" cy="660" r="4.5" fill="{t[fam]}"/>')
-        out.append(text(cx + 27, 664.5, label, t["text"], 12.5))
+        out.append(f'<circle cx="{cx + 15}" cy="660" r="5" fill="{t[fam]}"/>')
+        out.append(text(cx + 28, 665, label, t["text"], 14.5))
         cx += w + 12
     out.append("</svg>")
     return "\n".join(out) + "\n"
