@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="716" viewBox="0 0 1280 716" role="img" aria-label="An example xmsg team: an Argon director and a Claude driver in the experiment workspace, a Claude steward with Argon and Sol reviewers on the pipeline package, and a Claude upstream watcher, all connected through xmsg, with approvals kept by you.">
+<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/></marker></defs>
+<rect width="1280" height="716" fill="#ffffff"/>
+<rect x="470" y="20" width="340" height="62" rx="31" fill="#ffffff" stroke="#8250df" stroke-width="1.6"/>
+<text x="640" y="46" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">You</text>
+<text x="640" y="67" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="middle">approve spend · releases · version pins</text>
+<path d="M640,82 V112 M200,112 H1110 M200,112 V138 M670,112 V138 M1110,112 V138" stroke="#8250df" stroke-width="1.4" stroke-dasharray="4 4" fill="none"/>
+<text x="652" y="104" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">needs-user decisions come up; approvals go down</text>
+<rect x="20" y="140" width="360" height="420" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="40" y="172" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Experiment workspace</text>
+<text x="40" y="193" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" text-anchor="start">runs/ · notebooks/ · hosts/</text>
+<rect x="410" y="140" width="520" height="420" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="430" y="172" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Pipeline package</text>
+<text x="430" y="193" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" text-anchor="start">stages/ · defaults · releases</text>
+<rect x="960" y="140" width="300" height="420" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="980" y="172" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Upstream dependency</text>
+<text x="980" y="193" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" text-anchor="start">vendored tool · pinned version</text>
+<text x="1110" y="352" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">watches upstream and flags</text>
+<text x="1110" y="370" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">changes before any pin bump</text>
+<line x1="200" y1="308" x2="200" y2="428" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<text x="212" y="372" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">results ↔ direction</text>
+<line x1="362" y1="264" x2="528" y2="264" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<text x="445" y="254" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">results ↔ direction</text>
+<line x1="362" y1="452" x2="556" y2="309" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<text x="470" y="404" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">requests ↔ releases</text>
+<line x1="640" y1="308" x2="562" y2="428" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<line x1="700" y1="308" x2="778" y2="428" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<text x="670" y="360" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">pre-release</text>
+<text x="670" y="376" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">review</text>
+<line x1="812" y1="264" x2="978" y2="264" stroke="#6e7781" stroke-width="1.6" marker-start="url(#head)" marker-end="url(#head)"/>
+<text x="895" y="254" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">upstream changes</text>
+<text x="895" y="284" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" stroke="#f6f8fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke">pin checks</text>
+<rect x="40" y="222" width="320" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="40" y="234" width="4" height="60" rx="2" fill="#1a73e8"/>
+<text x="58" y="247" fill="#1a73e8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">DIRECTOR</text>
+<text x="58" y="271" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Argon</text>
+<text x="58" y="291" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Gemini 4 Argon · agy session</text>
+<rect x="40" y="430" width="320" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="40" y="442" width="4" height="60" rx="2" fill="#c15f3c"/>
+<text x="58" y="455" fill="#c15f3c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">DRIVER</text>
+<text x="58" y="479" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Claude Code</text>
+<text x="58" y="499" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Claude Fable 5.1 · runs experiments</text>
+<rect x="530" y="222" width="280" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="530" y="234" width="4" height="60" rx="2" fill="#c15f3c"/>
+<text x="548" y="247" fill="#c15f3c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">STEWARD · RELEASE MANAGER</text>
+<text x="548" y="271" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Claude Code</text>
+<text x="548" y="291" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Claude Opus 5.5 · owns releases</text>
+<rect x="430" y="430" width="232" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="430" y="442" width="4" height="60" rx="2" fill="#1a73e8"/>
+<text x="448" y="455" fill="#1a73e8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">REVIEW-SCIENCE</text>
+<text x="448" y="479" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Argon</text>
+<text x="448" y="499" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Gemini 4 Argon · agy session</text>
+<rect x="678" y="430" width="232" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="678" y="442" width="4" height="60" rx="2" fill="#0e8a6a"/>
+<text x="696" y="455" fill="#0e8a6a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">REVIEW-ENG</text>
+<text x="696" y="479" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Sol</text>
+<text x="696" y="499" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">GPT-6.1 Sol · Codex thread</text>
+<rect x="980" y="222" width="260" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="980" y="234" width="4" height="60" rx="2" fill="#c15f3c"/>
+<text x="998" y="247" fill="#c15f3c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start" letter-spacing="0.6">UPSTREAM WATCHER</text>
+<text x="998" y="271" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start">Claude Code</text>
+<text x="998" y="291" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Claude Opus 5.5 · pin checks</text>
+<path d="M200,560 V592 M670,560 V592 M1110,560 V592" stroke="#6e7781" stroke-width="1.4" stroke-dasharray="2 4"/>
+<rect x="20" y="592" width="1240" height="104" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="44" y="636" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" font-weight="700" text-anchor="start">xmsg</text>
+<text x="44" y="660" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start">~/.xmsg</text>
+<text x="170" y="630" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Every arrow is an xmsg message: one address book, mailboxes, threads, read receipts, a request ledger, the sender's model.</text>
+<rect x="170" y="646" width="292" height="28" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<circle cx="185" cy="660" r="4.5" fill="#c15f3c"/>
+<text x="197" y="664.5" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Claude Code: SendMessage + watch --next</text>
+<rect x="474" y="646" width="150" height="28" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<circle cx="489" cy="660" r="4.5" fill="#0e8a6a"/>
+<text x="501" y="664.5" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Codex: codex queue</text>
+<rect x="636" y="646" width="368" height="28" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<circle cx="651" cy="660" r="4.5" fill="#1a73e8"/>
+<text x="663" y="664.5" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">agy: mailbox watch or one headless turn per message</text>
+</svg>
