@@ -53,12 +53,12 @@ def arrow(x1, y1, x2, y2, c, both=True):
 
 
 def draw(t: dict) -> str:
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-           f'role="img" aria-label="An example xmsg team: an Argon director and a Claude driver in the experiment '
-           f'workspace, a Claude steward with Argon and Sol reviewers on the pipeline package, and a Claude '
-           f'upstream watcher, all connected through xmsg, with approvals kept by you.">',
-           f'<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" '
-           f'orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{t["arrow"]}"/></marker></defs>',
+    out = [(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+            f'role="img" aria-label="An example xmsg team: an Argon director and a Claude driver in the experiment '
+            f'workspace, a Claude steward with Argon and Sol reviewers on the pipeline package, and a Claude '
+            f'upstream watcher, all connected through xmsg, with approvals kept by you.">'),
+           (f'<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" '
+            f'orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{t["arrow"]}"/></marker></defs>'),
            f'<rect width="{W}" height="{H}" fill="{t["bg"]}"/>']
 
     # You, and the approval bracket over the three repos
