@@ -1,0 +1,3 @@
+interface:
+  display_name: "xmsg"
+  short_description: "Message, relay and track requests across Claude, Codex, Argon, Grok and Muse sessions"
