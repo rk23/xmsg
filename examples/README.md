@@ -1,0 +1,19 @@
+# Examples
+
+Each example names harnesses (Claude Code, Codex, agy, Grok) rather than models. The harness decides how a
+message is delivered, and any model it serves can fill the role.
+
+| Example | What it shows |
+|---|---|
+| [Director and executor](director-and-executor/) | The smallest useful setup: one model directs, a coding agent works, and `request --wait` returns the direction in one command |
+| [Builder and reviewer](builder-and-reviewer/) | A Claude Code builder and a live Codex reviewer side by side, using the `codex queue` and `watch --next` transports |
+| [Review board](review-board/) | One request fanned out to reviewers on three harnesses before a release, tracked in the ledger |
+| [Research team](research-team/) | A real six-session setup across three repos: director, driver, steward, two reviewers and an upstream watcher |
+
+**Line styles in the diagrams:**
+- **A thick arrow** is an xmsg message between two different harnesses. It is recorded in the ledger
+  with threads, read receipts and the sender's model.
+- **A dashed arrow** is a harness's own messaging between two of its sessions, such as Claude Code's
+  `SendMessage`. Those sessions can still use xmsg when they want a ledger entry.
+- **A plain line from you** is a decision, such as approving spend, a release or a version pin. It is
+  not a message.
