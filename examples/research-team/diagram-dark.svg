@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740" role="img" aria-label="An example xmsg team: an Argon director and a Claude driver in the experiment workspace, a Claude steward with Argon and Sol reviewers on the pipeline package, and a Claude upstream watcher. Thick arrows are xmsg messages between harnesses; dashed arrows are Claude Code's own SendMessage between Claude sessions. Approvals stay with you.">
 <defs><marker id="xmsg" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" orient="auto-start-reverse" markerWidth="14" markerHeight="14"><path d="M0,0 L10,5 L0,10 z" fill="#d1d7e0"/></marker><marker id="native" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" orient="auto-start-reverse" markerWidth="11" markerHeight="11"><path d="M0,0 L10,5 L0,10 z" fill="#7d8590"/></marker></defs>
 <rect width="1280" height="740" fill="#0d1117"/>
-<rect x="430" y="16" width="420" height="70" rx="35" fill="#0d1117" stroke="#b083f0" stroke-width="1.6"/>
-<text x="640" y="45" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">You</text>
-<text x="640" y="70" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="middle">approve spend · releases · version pins</text>
-<path d="M640,86 V112 M200,112 H1110 M200,112 V139 M670,112 V139 M1110,112 V139" stroke="#b083f0" stroke-width="1.2" fill="none" opacity="0.7"/>
+<rect x="430.0" y="18" width="420" height="64" rx="32" fill="#0d1117" stroke="#b083f0" stroke-width="1.6"/>
+<text x="640" y="45" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">You</text>
+<text x="640" y="68" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="middle">approve spend · releases · version pins</text>
+<path d="M640,82 V112 M200,112 H1110 M200,112 V139 M670,112 V139 M1110,112 V139" stroke="#b083f0" stroke-width="1.2" fill="none" opacity="0.7"/>
 <text x="652" y="104" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">needs-user decisions come up; approvals go down</text>
 <rect x="20" y="140" width="360" height="420" rx="14" fill="#161b22" stroke="#30363d"/>
 <text x="40" y="174" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">Experiment workspace</text>
@@ -63,10 +63,10 @@
 <rect x="20" y="584" width="1240" height="136" rx="14" fill="#161b22" stroke="#30363d"/>
 <text x="44" y="642" fill="#e6edf3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" text-anchor="start">xmsg</text>
 <text x="44" y="668" fill="#9198a1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" text-anchor="start">~/.xmsg</text>
-<line x1="172" y1="620" x2="218" y2="620" stroke="#d1d7e0" stroke-width="3.2" marker-end="url(#xmsg)"/>
-<text x="232" y="625" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">xmsg message: between harnesses, recorded in the ledger</text>
-<line x1="680" y1="620" x2="726" y2="620" stroke="#7d8590" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#native)"/>
-<text x="740" y="625" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">native: Claude Code's own SendMessage</text>
+<line x1="172" y1="620" x2="214" y2="620" stroke="#d1d7e0" stroke-width="3.2" marker-end="url(#xmsg)"/>
+<text x="228" y="625" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">xmsg message: between harnesses, recorded in the ledger</text>
+<line x1="686.0" y1="620" x2="728.0" y2="620" stroke="#7d8590" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#native)"/>
+<text x="742.0" y="625" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">native: Claude Code's own SendMessage</text>
 <rect x="172" y="652" width="372" height="34" rx="17" fill="#0d1117" stroke="#3d444d"/>
 <circle cx="188" cy="669" r="5" fill="#e8916d"/>
 <text x="201" y="674" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">Claude Code: SendMessage, xmsg watch --next</text>

@@ -3,16 +3,10 @@
 One model sets direction; a coding agent does the work and comes back with results. This is the smallest
 useful xmsg setup. The two sessions can run any models their CLIs support.
 
-```mermaid
-flowchart LR
-  you(["You: approve spend, merges, releases"])
-  subgraph repo["your repo"]
-    exec["<b>executor</b><br/>Claude Code or Codex session"]
-    dir["<b>director</b><br/>agy, Grok or Codex conversation<br/>one headless turn per message"]
-  end
-  you --- exec
-  exec <== "results ⇄ direction" ==> dir
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="diagram-dark.svg">
+  <img alt="A director and an executor: you approve; the executor, a Claude Code or Codex session, asks the director, an agy, Grok or Codex conversation, through xmsg and gets direction back." src="diagram-light.svg">
+</picture>
 
 The thick arrow is an xmsg message between two different harnesses. The plain line from you is a decision,
 not a message.

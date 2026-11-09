@@ -3,16 +3,10 @@
 A Claude Code session builds and a live Codex thread reviews, side by side in one repo. A second Claude
 Code session runs tests, so this setup shows both kinds of link.
 
-```mermaid
-flowchart LR
-  subgraph repo["your repo"]
-    builder["<b>builder</b><br/>Claude Code session"]
-    tester["<b>tester</b><br/>Claude Code session"]
-    reviewer["<b>reviewer</b><br/>live Codex thread"]
-  end
-  builder <== "review request ⇄ findings" ==> reviewer
-  builder <-. "test runs ⇄ results" .-> tester
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="diagram-dark.svg">
+  <img alt="A Claude Code builder exchanges review requests and findings with a live Codex reviewer through xmsg (thick arrow), and test runs with a second Claude Code session through Claude Code's own SendMessage (dashed arrow)." src="diagram-light.svg">
+</picture>
 
 The thick arrow is an xmsg message between harnesses, delivered with `codex queue` one way and the
 builder's mailbox the other. The dashed arrow is Claude Code's own `SendMessage` between its two sessions.

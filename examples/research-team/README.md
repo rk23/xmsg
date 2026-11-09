@@ -1,8 +1,8 @@
 # Example: a research team across three repos
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="team-dark.svg">
-  <img alt="An Argon director and a Claude driver in the experiment workspace; a Claude steward with Argon and Sol reviewers on the pipeline package; a Claude upstream watcher on the vendored dependency; thick arrows are xmsg messages between harnesses, dashed arrows are Claude Code SendMessage between Claude sessions; approvals stay with you." src="team-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="diagram-dark.svg">
+  <img alt="An Argon director and a Claude driver in the experiment workspace; a Claude steward with Argon and Sol reviewers on the pipeline package; a Claude upstream watcher on the vendored dependency; thick arrows are xmsg messages between harnesses, dashed arrows are Claude Code SendMessage between Claude sessions; approvals stay with you." src="diagram-light.svg">
 </picture>
 
 **Line styles.** A thick arrow is an xmsg message between two different harnesses, for example a Claude Code
@@ -69,5 +69,5 @@ A typical loop:
 7. **You decide anything that costs money, publishes or moves a pin.** Those messages are flagged
    `--needs-user`. You can follow everything with `xmsg log -f --bodies`.
 
-To regenerate the diagram after editing it, run `python3 make_diagram.py` in this directory. That writes
-`team-light.svg` and `team-dark.svg`.
+The diagrams for all the examples come from [`../make_diagrams.py`](../make_diagrams.py). Run
+`python3 make_diagrams.py` in `examples/` to regenerate them.

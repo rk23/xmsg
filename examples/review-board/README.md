@@ -4,20 +4,10 @@ A package owner asks reviewers from several labs to look at every release. Each 
 different harness, so their blind spots differ. One `request` reaches them all, and the ledger shows
 where each review stands.
 
-```mermaid
-flowchart TB
-  you(["You: approve the release"])
-  subgraph pkg["package repo"]
-    owner["<b>owner · release manager</b><br/>Claude Code or Codex session"]
-    a["<b>reviewer A</b><br/>Codex thread"]
-    b["<b>reviewer B</b><br/>agy conversation"]
-    c["<b>reviewer C</b><br/>Grok conversation"]
-  end
-  you --- owner
-  owner <== "review ⇄ findings" ==> a
-  owner <== "review ⇄ findings" ==> b
-  owner <== "review ⇄ findings" ==> c
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="diagram-dark.svg">
+  <img alt="You approve the release; the owner sends one xmsg request that fans out to reviewers on three harnesses (a Codex thread, an agy conversation and a Grok conversation), and each replies with findings." src="diagram-light.svg">
+</picture>
 
 Every thick arrow is an xmsg message, and each reviewer is reached through its own harness:
 - `codex queue` for the Codex thread;

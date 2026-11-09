@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="372" viewBox="0 0 1000 372" role="img" aria-label="A director and an executor: you approve; the executor, a Claude Code or Codex session, asks the director, an agy, Grok or Codex conversation, through xmsg and gets direction back.">
+<defs><marker id="xmsg" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" orient="auto-start-reverse" markerWidth="14" markerHeight="14"><path d="M0,0 L10,5 L0,10 z" fill="#d1d7e0"/></marker><marker id="native" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" orient="auto-start-reverse" markerWidth="11" markerHeight="11"><path d="M0,0 L10,5 L0,10 z" fill="#7d8590"/></marker></defs>
+<rect width="1000" height="372" fill="#0d1117"/>
+<rect x="75.0" y="16" width="300" height="64" rx="32" fill="#0d1117" stroke="#b083f0" stroke-width="1.6"/>
+<text x="225" y="43" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">You</text>
+<text x="225" y="66" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="middle">approve spend, merges, releases</text>
+<rect x="20" y="112" width="960" height="200" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="40" y="146" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">Your repo</text>
+<path d="M225,80 L225,186" stroke="#b083f0" stroke-width="1.2" opacity="0.7"/>
+<line x1="392" y1="235" x2="608" y2="235" stroke="#d1d7e0" stroke-width="3.2" marker-start="url(#xmsg)" marker-end="url(#xmsg)"/>
+<text x="500" y="223" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="middle" stroke="#161b22" stroke-width="6" stroke-linejoin="round" paint-order="stroke">results ↔ direction</text>
+<rect x="60" y="186" width="330" height="98" rx="10" fill="#0d1117" stroke="#3d444d"/>
+<rect x="60" y="198" width="4" height="74" rx="2" fill="#9198a1"/>
+<text x="78" y="213" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" letter-spacing="0.5">EXECUTOR</text>
+<text x="78" y="241" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start">Claude Code or Codex</text>
+<text x="78" y="266" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">does the work · request --wait</text>
+<rect x="610" y="186" width="330" height="98" rx="10" fill="#0d1117" stroke="#3d444d"/>
+<rect x="610" y="198" width="4" height="74" rx="2" fill="#9198a1"/>
+<text x="628" y="213" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" letter-spacing="0.5">DIRECTOR</text>
+<text x="628" y="241" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start">agy, Grok or Codex</text>
+<text x="628" y="266" fill="#9198a1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">any model · one headless turn</text>
+<line x1="40" y1="343" x2="82" y2="343" stroke="#d1d7e0" stroke-width="3.2" marker-end="url(#xmsg)"/>
+<text x="96" y="348" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">xmsg message between harnesses</text>
+<line x1="364.0" y1="343" x2="406.0" y2="343" stroke="#b083f0" stroke-width="1.4" opacity="0.8"/>
+<text x="420.0" y="348" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start">your decision, not a message</text>
+</svg>
